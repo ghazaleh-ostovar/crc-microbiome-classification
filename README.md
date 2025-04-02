@@ -2,7 +2,7 @@
 
 ##  Overview  
 This project aims to classify **colorectal cancer (CRC)** using **gut microbiome profiles**.  
-Using OTU (Operational Taxonomic Unit) abundance data from a publicly available dataset, we apply feature reduction and machine learning to distinguish CRC from healthy samples with high accuracy.
+Using OTU (Operational Taxonomic Unit) abundance data from a publicly available dataset, I apply feature reduction and machine learning to distinguish CRC from healthy samples with high accuracy.
 
 **Dataset:** Baxter et al., 2016, *Genome Medicine*  
 🔗 [Available here](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-016-0290-3)
