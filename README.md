@@ -23,7 +23,7 @@ Using OTU (Operational Taxonomic Unit) abundance data from a publicly available 
 1. **Abundance Filtering** – Removed low-abundance OTUs to reduce noise  
 2. **Variance Thresholding** – Retained features with sufficient variability  
 3. **Dimensionality Estimation** – Used domain knowledge and PCA to estimate the number of informative features  
-4. **Feature Selection** – Compared LASSO and Random Forest to select predictive OTUs
+
 - Reduced features from ~9,000 to **385**
 
 ### **Feature Selection**
