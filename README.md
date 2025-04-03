@@ -34,19 +34,26 @@ Using OTU (Operational Taxonomic Unit) abundance data from a publicly available 
 
 ---
 
-## 📊 Results (CRC vs. Healthy)
+## 📊 Results (CRC vs Healthy)
 
-- **Best Model:** SVM (RBF Kernel)  
-- **Selected Features:** 87 OTUs (via LASSO)  
-- **Test Accuracy:** 86.2%  
-- **AUC-ROC:** 0.856  
-- **Precision (Cancer):** 90%  
-- **Recall (Cancer):** 75%
+| Model               | Accuracy | AUC-ROC | Precision (Cancer) | Recall (Cancer) |
+|--------------------|----------|---------|---------------------|------------------|
+| **SVM (LASSO)** ✅ | **86.2%** | **0.856** | **90%**             | **75%**          |
+| Random Forest       | 82.8%    | 0.824   | 85%                 | 71%              |
+| XGBoost             | 84.5%    | 0.842   | 83%                 | 79%              |
 
 ---
 
-##  Key Insights
-- **LASSO-based feature selection** outperformed RF-selected features  
-- **SVM** achieved the best balance between precision and recall for CRC classification  
-- Classification between **nonCRC and Healthy** was weak, possibly due to microbiome similarity
+## 🔍 Key Insights  
+- **LASSO**-selected features outperformed RF-selected ones  
+- **SVM** (RBF kernel) achieved the best balance of precision and recall  
+- CRC and healthy samples are separable, but **nonCRC vs healthy** is harder—likely due to microbiome similarity  
 
+---
+
+##  Setup & Requirements
+
+Clone the repository and install dependencies using:
+
+```bash
+pip install -r requirements.txt
